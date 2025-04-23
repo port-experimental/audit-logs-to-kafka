@@ -1,13 +1,14 @@
-# Port.io Audit Log Exporter
+![port-oss-category](https://github.com/port-experimental/oss-images/blob/main/example-code.png)
 
-This script exports audit logs from Port.io to a Kafka stream for SIEM ingestion. It tracks the last processed log to ensure only new logs are exported.
+# Port Audit Log Exporter
+
+This script exports audit logs from Port to a Kafka stream for SIEM ingestion. It tracks the last processed log to ensure only new logs are exported.
 
 ## Prerequisites
 
 - Python 3.7+
 - Kafka cluster
 - Port.io API access and token
-- python-dateutil package
 
 ## Installation
 
@@ -46,7 +47,7 @@ python port_audit_log_exporter.py
 ```
 
 The script will:
-1. Connect to Port.io API
+1. Connect to the Port API
 2. Fetch audit logs
 3. Send them to the configured Kafka topic
 4. Track the last processed log using `last_processed.txt`
