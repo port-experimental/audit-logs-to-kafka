@@ -35,7 +35,7 @@ def save_last_processed_time(timestamp):
 def add_one_second(timestamp_str):
     """Add one second to the timestamp string and format it correctly"""
     dt = dateutil.parser.parse(timestamp_str)
-    dt += timedelta(microseconds=1)
+    dt += timedelta(seconds=1)
     
     # Format as "YYYY-MM-DDTHH:MM:SS.sssZ"
     # Use microseconds/1000 to get milliseconds, and ensure 3 digits with zfill
