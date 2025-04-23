@@ -53,6 +53,9 @@ The script will:
 4. Track the last processed log using `last_processed.txt`
 5. On subsequent runs, only process logs newer than the last processed timestamp
 
+## Architecture
+![architecture](https://github.com/port-experimental/audit-logs-to-kafka/blob/main/architecture.png)
+
 ## Features
 
 - Tracks last processed log's timestamp to avoid duplicates
