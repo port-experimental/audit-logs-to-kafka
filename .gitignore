@@ -1,0 +1,5 @@
+.env
+venv/
+last_processed.txt
+docker-compose.yml
+
